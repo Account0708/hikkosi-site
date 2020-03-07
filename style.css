@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.site-header {
+    width: 100%;
+}
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+.site-logo {
+    width: 70%;
+}
+.site-freedial {
+    width: 30%;
+}
+.site-title {
+    width: 100%;
+}
+.quotation {
+    width: 100%;
+}
+.quotation-button img {
+    width: 100%;
+}
+.quotation p {
+    width: 90%;
+    line-height: 15px;
+    font-size: small;
+    margin: 0 auto;
+    font-family: Helvetica,Arial,sans-serif;
+}
+.six-contents {
+    width: 100%;
+    margin-top: 10px;
+}
+.three-contents {
+    width: 90%;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.three-contents li {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.three-contents li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.three-contents li img {
+    width: 95%;
+}
+.three-contents li p {
+    font-size: small;
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+}
+footer {
+    margin-top: 20px;
+}
+.footer-top {
+    width: 100%;
+}
+.footer-top img {
+    width: 100%;
+}
+.footer-bottom {
+    background: #111111;
+    color: white;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bottom p {
+    font-size: small;
+}
+
+/* 便利なサービス */
+
+.banner {
+    background: #111111;
+    color: white;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner p {
+    font-size: small;
+}
