@@ -76,7 +76,7 @@
 }
 .quotation p {
     margin-top: 10px;
-    font-size: small;
+    font-size: medium;
     width: 85%;
 }
 
@@ -103,7 +103,9 @@
 .content-one img {
     width: 30%;
 }
-
+.content-one-text {
+    font-size: x-large;
+}
 .support {
     display: flex;
     justify-content: center;
@@ -121,7 +123,7 @@ footer {
     width: 100%;
 }
 footer p {
-    font-size: small;
+    font-size: medium;
     text-align: center;
     padding: 5px 0;
 }
