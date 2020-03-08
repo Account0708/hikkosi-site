@@ -87,12 +87,10 @@
 .content-one {
     width: 100%;
     display: flex;
-    justify-content: center;
     border-bottom: 1px solid black;
 }
 .content-one a {
-    width: 80%;
-    padding: 0 10%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
