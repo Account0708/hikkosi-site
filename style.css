@@ -62,10 +62,10 @@
     flex-direction: column;
     align-items: center;
     background: #c2eeff;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 .quotation-button {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,8 +74,9 @@
     width: 100%;
 }
 .quotation p {
-    font-size: x-small;
-    width: 80%;
+    margin-top: 10px;
+    font-size: small;
+    width: 85%;
 }
 
 .contents-list {
@@ -122,7 +123,7 @@ footer {
     width: 100%;
 }
 footer p {
-    font-size: x-small;
+    font-size: small;
     text-align: center;
     padding: 5px 0;
 }
