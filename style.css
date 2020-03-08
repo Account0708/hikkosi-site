@@ -19,10 +19,10 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 3%;
+    padding: 5px 0;
 }
 .site-header-top .logo {
     width: 90%;
-    margin: 0 0 5px;
 }
 
 /* .site-header-text {
