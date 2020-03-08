@@ -14,14 +14,15 @@
 .site-header-top {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 3%;
 }
 .site-header-top .logo {
-    width: 96%;
-    margin: 5px 2%;
+    width: 90%;
+    margin: 5px 0;
 }
 
 /* .site-header-text {
@@ -79,9 +80,6 @@
     width: 85%;
 }
 
-.contents-list {
-
-}
 .contents-six {
     list-style: none;
     background: #072d51;
