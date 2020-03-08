@@ -2,8 +2,126 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica,Arial,sans-serif;
+    /* color: white;
+    background: #111111; */
 }
 .site-header {
+    background: #0066cc;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+}
+.site-header-top {
+    display: flex;
+    background: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 3%;
+    top: 0;
+}
+.site-header-top .logo {
+    position: absolute;
+    width: 45px;
+    margin-top: 5px;
+    margin-left: 1%;
+}
+.site-header-text {
+    margin-left: 18%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site-header-text p {
+    color: #0066cc;
+    font-size: 10px;
+}
+.site-header-text h2 {
+    color: black;
+}
+.title-bg {
+    width: 100%;
+    background: white;
+}
+.freedial {
+    padding: 5px 2%;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.freedial img {
+    width: 50%;
+}
+
+.quotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c2eeff;
+    padding-bottom: 20px;
+}
+.quotation-button {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.quotation-button img { 
+    width: 100%;
+}
+.quotation p {
+    font-size: x-small;
+    width: 80%;
+}
+
+.contents-list {
+
+}
+.contents-six {
+    list-style: none;
+    background: #072d51;
+}
+.content-one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.content-one a {
+    width: 80%;
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: #072d51;
+}
+.content-one img {
+    width: 30%;
+}
+
+.support {
+    display: flex;
+}
+.support img {
+    width: 100%;
+}
+
+footer {
+    background: #111111;
+    color: white;
+}
+footer p {
+    font-size: x-small;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* .site-header {
     width: 100%;
 }
 .header-top {
@@ -11,12 +129,15 @@
     display: flex;
     justify-content: space-between;
     align-items:flex-end;
+    background: white;
 }
 .site-logo {
     width: 70%;
+    background: white;
 }
 .site-freedial {
     width: 30%;
+    background: white;
 }
 .site-title {
     width: 100%;
@@ -86,11 +207,12 @@ footer {
 }
 .footer-bottom p {
     font-size: small;
-}
+} */
 
 /* 便利なサービス */
 
 .banner {
+    margin-top: 20px;
     background: #111111;
     color: white;
     width: 100%;
@@ -101,4 +223,20 @@ footer {
 }
 .banner p {
     font-size: small;
+}
+.heading {
+    width: 100%;
+}
+.heading h1 {
+    margin: 20px auto;
+    width: 90%;
+    font-size: large;
+}
+.heading p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: small;
+}
+.heading span {
+    font-weight: 700;
 }
