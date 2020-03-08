@@ -109,6 +109,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
+    margin: 0 auto;
 }
 .support img {
     width: 100%;
