@@ -90,8 +90,8 @@
     border-bottom: 1px solid black;
 }
 .content-one a {
-    width: 90%;
-    padding: 0 5%;
+    width: 95%;
+    padding-right: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
