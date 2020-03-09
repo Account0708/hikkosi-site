@@ -243,12 +243,16 @@ footer {
 .main-contents .main-contents-details {
     width: 90%;
     margin: 0 auto;
-    font-size: medium;
+    font-size: large;
+    line-height: 180%;
     padding-bottom: 20px;
 }
 .main-contents span {
     font-weight: 700;
     color: coral;
+}
+.main-contents ul {
+    list-style: none;
 }
 .main-service-content {
     width: 100%;
@@ -256,7 +260,17 @@ footer {
     align-items: center;
     flex-direction: column;
     background: white;
+    margin: 10px 0;
+}
+.main-service-content img {
+    cursor: pointer;
+    width: 90%;
 }
 .se-detail {
-    width: 80%;
+    width: 70%;
+    display: none;
+}
+.se-detail-text {
+    font-size: large;
+    line-height: 180%;
 }
