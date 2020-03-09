@@ -276,8 +276,12 @@ footer {
     border-radius: 20px;
     position: relative;
 }
-.main-service-content img {
+.se-img {
+    height: 36px;
     width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 2.5%;
 }
 .list-title h2 {
