@@ -239,7 +239,7 @@ footer {
 .main-contents h1 {
     padding-top: 20px;
     margin: auto;
-    width: 90%;
+    width: 95%;
     font-size: x-large;
 }
 .main-contents .main-contents-details {
@@ -278,9 +278,10 @@ footer {
 }
 .main-service-content img {
     width: 36px;
+    margin-right: 2.5%;
 }
 .list-title h2 {
-    margin-right: 1%;
+    margin-right: 2.5%;
     font-size: large;
     line-height: 2;
 }
@@ -308,7 +309,6 @@ footer {
     justify-content: flex-end;
     align-items: center;
     padding-right: 3%;
-}
 }
 .plus-minus {
     
