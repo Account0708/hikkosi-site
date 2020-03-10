@@ -331,25 +331,42 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: linear-gradient(white,#e6e6e6);
     padding: 0 2%;
     margin-bottom: 5px;
     border-radius: 10px;
     max-width: 350px;
+    width: 100%;
 }
-.se-detail-li img {
-    width: 100px;
+.se-detail-li .se-detail-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    max-width: 100px;
+}
+.se-detail-img img {
+    width: 100%;
 }
 .more-se-detail {
-    
+    width: 78%;
 }
 .more-se-detail h2 {
-    color: #0066cc;
+    color: #0033ff;
     font-size: large;
 }
 .more-se-detail p {
     font-size: large;
 }
 .pack-1 i {
-    color: #0066cc;
+    color: #0033ff;
+}
+.pack-2 i {
+    color: #00cc00;
+}
+.pack-3 i {
+    color: #ffcc00;
+}
+.pack-4 i {
+    color: #ff00cc;
 }
