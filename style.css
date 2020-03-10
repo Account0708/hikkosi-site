@@ -370,3 +370,13 @@ footer {
 .pack-4 i {
     color: #ff00cc;
 }
+.list-title .question {
+    color: #1b36b3;
+}
+.answer {
+    color: #cc0404;
+    font-weight: bold;
+}
+.cat4 .list-title {
+    justify-content: flex-start;
+}
