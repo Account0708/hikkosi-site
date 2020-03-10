@@ -49,10 +49,10 @@
                     </div>
                     <h2>梱包資材が無料</h2>
                     <div class="plus plus-1 ">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-1 ">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-1">
@@ -70,10 +70,10 @@
                     </div>
                     <h2>大型家具・家電の梱包と設置</h2>
                     <div class="plus plus-2">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-2">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-2">
@@ -95,10 +95,10 @@
                     </div>
                     <h2>各種電気工事</h2>
                     <div class="plus plus-3">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-3">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-3">
@@ -114,10 +114,10 @@
                     </div>
                     <h2>自転車・バイクのお引越し</h2>
                     <div class="plus plus-4">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-4">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-4">
@@ -133,10 +133,10 @@
                     </div>
                     <h2>ピアノのお引越し</h2>
                     <div class="plus plus-5">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-5">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-5">
@@ -152,10 +152,10 @@
                     </div>
                     <h2>ペットのお引越し</h2>
                     <div class="plus plus-6">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-6">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-6">
@@ -171,10 +171,10 @@
                     </div>
                     <h2>プロロの盗聴バスター</h2>
                     <div class="plus plus-7">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-7">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-7">
@@ -190,10 +190,10 @@
                     </div>
                     <h2>ハウスクリーニング</h2>
                     <div class="plus plus-8">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-8">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-8">
@@ -209,10 +209,10 @@
                     </div>
                     <h2>不用品の引き取り･回収</h2>
                     <div class="plus plus-9">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-9">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-9">
@@ -228,10 +228,10 @@
                     </div>
                     <h2>荷造り･荷解きスタッフサービス</h2>
                     <div class="plus plus-10">
-                        <i class="fas fa-plus"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="minus minus-10">
-                        <i class="fas fa-minus"></i>
+                        <i class="fas fa-chevron-up"></i>
                     </div>
                 </div>
                 <div class="se-detail se-detail-10">
@@ -268,9 +268,13 @@
         });
         $(".plus-1").on("click", function () {
             $(".plus-1").css("z-index", "-1");
+            $(".plus-1").css("display", "none");
+            $(".minus-1").css("display", "flex");
         })
         $(".minus-1").on("click", function () {
             $(".plus-1").css("z-index", "2");
+            $(".minus-1").css("display", "none");
+            $(".plus-1").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -279,9 +283,13 @@
         });
         $(".plus-2").on("click", function () {
             $(".plus-2").css("z-index", "-1");
+            $(".plus-2").css("display", "none");
+            $(".minus-2").css("display", "flex");
         })
         $(".minus-2").on("click", function () {
             $(".plus-2").css("z-index", "2");
+            $(".minus-2").css("display", "none");
+            $(".plus-2").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -290,9 +298,13 @@
         });
         $(".plus-3").on("click", function () {
             $(".plus-3").css("z-index", "-1");
+            $(".plus-3").css("display", "none");
+            $(".minus-3").css("display", "flex");
         })
         $(".minus-3").on("click", function () {
             $(".plus-3").css("z-index", "2");
+            $(".minus-3").css("display", "none");
+            $(".plus-3").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -301,9 +313,13 @@
         });
         $(".plus-4").on("click", function () {
             $(".plus-4").css("z-index", "-1");
+            $(".plus-4").css("display", "none");
+            $(".minus-4").css("display", "flex");
         })
         $(".minus-4").on("click", function () {
             $(".plus-4").css("z-index", "2");
+            $(".minus-4").css("display", "none");
+            $(".plus-4").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -312,9 +328,13 @@
         });
         $(".plus-5").on("click", function () {
             $(".plus-5").css("z-index", "-1");
+            $(".plus-5").css("display", "none");
+            $(".minus-5").css("display", "flex");
         })
         $(".minus-5").on("click", function () {
             $(".plus-5").css("z-index", "2");
+            $(".minus-5").css("display", "none");
+            $(".plus-5").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -323,9 +343,13 @@
         });
         $(".plus-6").on("click", function () {
             $(".plus-6").css("z-index", "-1");
+            $(".plus-6").css("display", "none");
+            $(".minus-6").css("display", "flex");
         })
         $(".minus-6").on("click", function () {
             $(".plus-6").css("z-index", "2");
+            $(".minus-6").css("display", "none");
+            $(".plus-6").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -334,9 +358,13 @@
         });
         $(".plus-7").on("click", function () {
             $(".plus-7").css("z-index", "-1");
+            $(".plus-7").css("display", "none");
+            $(".minus-7").css("display", "flex");
         })
         $(".minus-7").on("click", function () {
             $(".plus-7").css("z-index", "2");
+            $(".minus-7").css("display", "none");
+            $(".plus-7").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -345,9 +373,13 @@
         });
         $(".plus-8").on("click", function () {
             $(".plus-8").css("z-index", "-1");
+            $(".plus-8").css("display", "none");
+            $(".minus-8").css("display", "flex");
         })
         $(".minus-8").on("click", function () {
             $(".plus-8").css("z-index", "2");
+            $(".minus-8").css("display", "none");
+            $(".plus-8").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -356,9 +388,13 @@
         });
         $(".plus-9").on("click", function () {
             $(".plus-9").css("z-index", "-1");
+            $(".plus-9").css("display", "none");
+            $(".minus-9").css("display", "flex");
         })
         $(".minus-9").on("click", function () {
             $(".plus-9").css("z-index", "2");
+            $(".minus-9").css("display", "none");
+            $(".plus-9").css("display", "flex");
         })
     </script>
     <script type="text/javascript">
@@ -367,11 +403,16 @@
         });
         $(".plus-10").on("click", function () {
             $(".plus-10").css("z-index", "-1");
+            $(".plus-10").css("display", "none");
+            $(".minus-10").css("display", "flex");
         })
         $(".minus-10").on("click", function () {
             $(".plus-10").css("z-index", "2");
+            $(".minus-10").css("display", "none");
+            $(".plus-10").css("display", "flex");
         })
     </script>
+    
 
 
 

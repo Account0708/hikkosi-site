@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>引っ越しプラン</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="site-header">
+
+            <div class="site-header-top">
+                <img class="logo" src="./img/rogo.png" alt="">
+                <!-- <div class="site-header-text">
+                    <p>プロフェッショナルなサービスをロープライスで</p>
+                    <h2>引越しのプロロ</h2>
+                </div> -->
+            </div>
+            <img class="title-bg" src="./img/title-bg.png" alt="">
+            <div class="freedial">
+                <img src="./img/freedaiyaru.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <p>引っ越しプラン</p>
+    </div>
+
+    <div class="main-contents">
+        <h1>【プロロの各種引越しプランのご紹介】</h1>
+        <p class="main-contents-details">
+            プロロでは、お引越しの専門会社として、お客様にご満足頂くため、お客様のよくあるご要望をもとに引越しプランをご用意しております。お引越し専門会社としての実績による、お客さまのご予算やご要望に合わせて選べるさまざまな引越しプランをご用意しております。プロロは、実績と安心をお届け致します。
+        </p>
+
+        <ul>
+            <li class="main-service-content">
+                <div class="list-title list-title-1 plus-minus-1 pack-1">
+
+                    <h2>節約パック</h2>
+                    <div class="plus plus-1 ">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="minus minus-1 ">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="se-detail se-detail-1">
+                    <p class="se-detail-text">
+                        少しでもお引越しのご予算を抑えたいお客様にぴったりのプラン。荷造り・荷解きはお客様にてお願い致します。もちろん専用資材のご用意や大切な家具の梱包・セッティングはお任せください。
+                    </p>
+                </div>
+            </li>
+            <li class="main-service-content">
+                <div class="list-title list-title-2 plus-minus-2 pack-2">
+
+                    <h2>楽々おまかせパック</h2>
+                    <div class="plus plus-2">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="minus minus-2">
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                </div>
+                <div class="se-detail se-detail-2">
+                    <p class="se-detail-text">
+                        引越し準備がなかなかできない・急な引越しなど、お引越し前日までお忙しいお客様にぴったりのプラン。荷造りは、お任せいただき引越し先での荷解きのみお客様にしていただきます。
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="quotation">
+        <a class="quotation-button" href="#">
+            <img src="./img/submit_bt.png" alt="">
+        </a>
+        <p>
+            お見積りは無料です。お気軽にお申し込みください。<br>
+            お引越しのお見積りは、当社が早急な調査の上で料金を算出させていただきます。<br>
+            学生様･単身パック･長距離パックにつきましては入力頂いた内容で後日作業内容や日程等のご連絡致します。<br>
+            お引越しがはじめての人も問題ございません。<br>
+            プロロなら全国どこでもお客様のニーズにお答えできるような各種お引越しプランをご用意しております。
+        </p>
+    </div>
+
+    <footer>
+        <p>福岡,東京,大阪,北海道の引越しが格安</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script type="text/javascript">
+        $(".plus-minus-1").on("click", function () {
+            $(".se-detail-1").slideToggle();
+        });
+        $(".plus-1").on("click", function () {
+            $(".plus-1").css("z-index", "-1");
+            $(".plus-1").css("display", "none");
+            $(".minus-1").css("display", "flex");
+        })
+        $(".minus-1").on("click", function () {
+            $(".plus-1").css("z-index", "2");
+            $(".minus-1").css("display", "none");
+            $(".plus-1").css("display", "flex");
+        })
+    </script>
+    <script type="text/javascript">
+        $(".plus-minus-2").on("click", function () {
+            $(".se-detail-2").slideToggle();
+        });
+        $(".plus-2").on("click", function () {
+            $(".plus-2").css("z-index", "-1");
+            $(".plus-2").css("display", "none");
+            $(".minus-2").css("display", "flex");
+        })
+        $(".minus-2").on("click", function () {
+            $(".plus-2").css("z-index", "2");
+            $(".minus-2").css("display", "none");
+            $(".plus-2").css("display", "flex");
+        })
+    </script>
+    <script type="text/javascript">
+        $(".plus-minus-3").on("click", function () {
+            $(".se-detail-3").slideToggle();
+        });
+        $(".plus-3").on("click", function () {
+            $(".plus-3").css("z-index", "-1");
+            $(".plus-3").css("display", "none");
+            $(".minus-3").css("display", "flex");
+        })
+        $(".minus-3").on("click", function () {
+            $(".plus-3").css("z-index", "2");
+            $(".minus-3").css("display", "none");
+            $(".plus-3").css("display", "flex");
+        })
+    </script>
+    <script type="text/javascript">
+        $(".plus-minus-4").on("click", function () {
+            $(".se-detail-4").slideToggle();
+        });
+        $(".plus-4").on("click", function () {
+            $(".plus-4").css("z-index", "-1");
+            $(".plus-4").css("display", "none");
+            $(".minus-4").css("display", "flex");
+        })
+        $(".minus-4").on("click", function () {
+            $(".plus-4").css("z-index", "2");
+            $(".minus-4").css("display", "none");
+            $(".plus-4").css("display", "flex");
+        })
+    </script>
+
+
+</body>
+
+</html>

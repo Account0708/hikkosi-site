@@ -309,7 +309,7 @@ footer {
     top: 0;
     bottom: 0;
     cursor: pointer;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     padding-right: 3%;
