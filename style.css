@@ -380,3 +380,31 @@ footer {
 .cat4 .list-title {
     justify-content: flex-start;
 }
+
+.company-profile-table {
+    width: 100%;
+    list-style: none;
+    font-size: large;
+    line-height: 1.8;
+}
+.company-profile-table li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111111;
+}
+.left-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+    background: #f7f7f7;
+    padding: 10px 0;
+}
+.left-title p {
+    text-align: center;
+}
+.right-name {
+    width: 70%;
+    padding: 15px 0 5px;
+    background: white;
+}
