@@ -478,3 +478,55 @@ footer {
     font-size: large;
     font-weight: bold;
 }
+
+.quotetion-table {
+    width: 100%;
+    list-style: none;
+    font-size: large;
+    line-height: 1.8;
+}
+.quotetion-table li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111111;
+}
+/* .quotetion-table li:nth-child(5) {
+    min-height: 120px;
+} */
+.quotetion-table .left-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+    background: #f7f7f7;
+    padding: 10px 0;
+}
+.quotetion-table .left-title p {
+    text-align: center;
+}
+.quotetion-table .right-name {
+    width: 70%;
+    padding: 10px 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quotetion-table .right-name p {
+    padding: 0 8%;
+    width: 84%;
+}
+.quotetion-table .right-name input {
+    width: 90%;
+    max-width: 400px;
+    padding: 5px 0;
+    font-size: large;
+}
+.quotetion-table .right-name textarea {
+    width: 90%;
+    max-width: 400px;
+    height: 100%;
+    padding: 5px 0;
+    font-size: large;
+}

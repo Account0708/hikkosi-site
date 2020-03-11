@@ -30,5 +30,74 @@
             <p>お見積り</p>
         </div>
 
+        <div class="main-quotetion">
+            <form name="quotetion">
+    
+                <ul class="quotetion-table">
+                    <li>
+                        <div class="left-title">
+                            <p>氏名</p>
+                        </div>
+                        <div class="right-name">
+                            <input type="text">
+                            <p>例）引越　太郎</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-title">
+                            <p>フリガナ</p>
+                        </div>
+                        <div class="right-name">
+                            <input type="text">
+                            <p>例）ヒッコシ　タロウ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-title">
+                            <p>メールアドレス</p>
+                        </div>
+                        <div class="right-name">
+                            <input type="email">
+                            <p>例) hikkoshi@tarou.jp</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-title">
+                            <p>電話番号</p>
+                        </div>
+                        <div class="right-name">
+                            <input type="text">
+                            <p>例)000-0000-0000 携帯番号可</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-title">
+                            <p>ご意見・ご要望</p>
+                        </div>
+                        <div class="right-name">
+                            <textarea></textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button-contents">
+                            <input type="submit">
+                            <input onclick="reset()" type="reset">
+                        </div>
+                    </li>
+                </ul>
+    
+            </form>
+        </div>
+
+        <footer>
+            <p>福岡,東京,大阪,北海道の引越しが格安</p>
+        </footer>
+    
+        <script type="text/javascript">
+            function reset() {
+                document.quotetion.reset();
+            }
+        </script>
+
     </body>
 </html>
