@@ -408,3 +408,6 @@ footer {
     padding: 10px 0;
     background: white;
 }
+.right-name p {
+    padding-right: 5%;
+}
