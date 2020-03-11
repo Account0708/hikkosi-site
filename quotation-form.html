@@ -1,103 +1,764 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>お見積り</title>
-        <link rel="stylesheet" href="./style.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    </head>
-    <body>
-        
-        <header>
-            <div class="site-header">
-    
-                <div class="site-header-top">
-                    <img class="logo" src="./img/rogo.png" alt="">
-                    <!-- <div class="site-header-text">
+
+<head>
+    <meta charset="utf-8">
+    <title>お見積り</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <div class="site-header-top">
+                <img class="logo" src="./img/rogo.png" alt="">
+                <!-- <div class="site-header-text">
                                 <p>プロフェッショナルなサービスをロープライスで</p>
                                 <h2>引越しのプロロ</h2>
                             </div> -->
-                </div>
-                <img class="title-bg" src="./img/title-bg.png" alt="">
-                <div class="freedial">
-                    <img src="./img/freedaiyaru.jpg" alt="">
-                </div>
             </div>
-        </header>
-    
-        <div class="banner">
-            <p>お見積り</p>
+            <img class="title-bg" src="./img/title-bg.png" alt="">
+            <div class="freedial">
+                <img src="./img/freedaiyaru.jpg" alt="">
+            </div>
         </div>
+    </header>
 
-        <div class="main-quotetion">
-            <form name="quotetion">
-    
-                <ul class="quotetion-table">
-                    <li>
-                        <div class="left-title">
-                            <p>氏名</p>
-                        </div>
-                        <div class="right-name">
-                            <input type="text">
-                            <p>例）引越　太郎</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left-title">
-                            <p>フリガナ</p>
-                        </div>
-                        <div class="right-name">
-                            <input type="text">
-                            <p>例）ヒッコシ　タロウ</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left-title">
-                            <p>メールアドレス</p>
-                        </div>
-                        <div class="right-name">
-                            <input type="email">
-                            <p>例) hikkoshi@tarou.jp</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left-title">
-                            <p>電話番号</p>
-                        </div>
-                        <div class="right-name">
-                            <input type="text">
-                            <p>例)000-0000-0000 携帯番号可</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="left-title">
-                            <p>ご意見・ご要望</p>
-                        </div>
-                        <div class="right-name">
-                            <textarea></textarea>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button-contents">
-                            <input type="submit">
-                            <input onclick="reset()" type="reset">
-                        </div>
-                    </li>
-                </ul>
-    
-            </form>
-        </div>
+    <div class="banner">
+        <p>お見積り</p>
+    </div>
 
-        <footer>
-            <p>福岡,東京,大阪,北海道の引越しが格安</p>
-        </footer>
-    
-        <script type="text/javascript">
-            function reset() {
-                document.quotetion.reset();
-            }
-        </script>
+    <div class="main-quotetion">
+        <form name="quotetion">
 
-    </body>
+            <ul class="quotetion-table">
+                <li>
+                    <div class="left-title">
+                        <p>お見積り種別<br>必須 </p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none" required>
+                            <option value="none" selected="selected">選択して下さい</option>
+                            <option value="「e得」ご予約">「e得」ご予約</option>
+                            <option value="「e得」お見積り">「e得」お見積り</option>
+                            <option value="お問い合わせ">お問い合わせ</option>
+                        </select>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>ご予算</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <p>※ご予算が有ればご入力下さい。例）○○円以内</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>住宅形態<br>必須</p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none" required>
+                            <option value="none" selected="selected">----</option>
+                            <option value="1R">1R</option>
+                            <option value="1K">1K</option>
+                            <option value="1DK">1DK</option>
+                            <option value="1LDK">1LDK</option>
+                            <option value="2K">2K</option>
+                            <option value="2DK">2DK</option>
+                            <option value="2LDK">2LDK</option>
+                            <option value="3K">3K</option>
+                            <option value="3DK">3DK</option>
+                            <option value="3LDK">3LDK</option>
+                            <option value="4K">4K</option>
+                            <option value="4DK">4DK</option>
+                            <option value="4LDK">4LDK</option>
+                            <option value="4LDK以上">4LDK以上</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>ご家族状況<br>必須</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="age">
+                            <p>大人</p>
+                            <select data-role="none" required>
+                                <option value="none" selected="selected">---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <p>名</p>
+                        </div>
+                        <div class="age">
+                            <p>子供</p>
+                            <select data-role="none" required>
+                                <option value="none" selected="selected">---</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <p>名</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>氏名<br>必須</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <p>例）引越　太郎</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>フリガナ</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <p>例）ヒッコシ　タロウ</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>メールアドレス<br>必須</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="email">
+                        <p>例) hikkoshi@tarou.jp</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>電話番号<br>必須</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text" required>
+                        <p>例） 090-0000-0000</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（現）<br>住所</p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none">
+                            <option value="none" selected="selected">選択してください</option>
+                            <option value="北海道">北海道</option>
+                            <option value="青森県">青森県</option>
+                            <option value="岩手県">岩手県</option>
+                            <option value="宮城県">宮城県</option>
+                            <option value="秋田県">秋田県</option>
+                            <option value="山形県">山形県</option>
+                            <option value="福島県">福島県</option>
+                            <option value="茨城県">茨城県</option>
+                            <option value="栃木県">栃木県</option>
+                            <option value="群馬県">群馬県</option>
+                            <option value="埼玉県">埼玉県</option>
+                            <option value="千葉県">千葉県</option>
+                            <option value="東京都">東京都</option>
+                            <option value="神奈川県">神奈川県</option>
+                            <option value="新潟県">新潟県</option>
+                            <option value="富山県">富山県</option>
+                            <option value="石川県">石川県</option>
+                            <option value="福井県">福井県</option>
+                            <option value="山梨県">山梨県</option>
+                            <option value="長野県">長野県</option>
+                            <option value="岐阜県">岐阜県</option>
+                            <option value="静岡県">静岡県</option>
+                            <option value="愛知県">愛知県</option>
+                            <option value="三重県">三重県</option>
+                            <option value="滋賀県">滋賀県</option>
+                            <option value="京都府">京都府</option>
+                            <option value="大阪府">大阪府</option>
+                            <option value="兵庫県">兵庫県</option>
+                            <option value="奈良県">奈良県</option>
+                            <option value="和歌山県">和歌山県</option>
+                            <option value="鳥取県">鳥取県</option>
+                            <option value="島根県">島根県</option>
+                            <option value="岡山県">岡山県</option>
+                            <option value="広島県">広島県</option>
+                            <option value="山口県">山口県</option>
+                            <option value="徳島県">徳島県</option>
+                            <option value="香川県">香川県</option>
+                            <option value="愛媛県">愛媛県</option>
+                            <option value="高知県">高知県</option>
+                            <option value="福岡県">福岡県</option>
+                            <option value="佐賀県">佐賀県</option>
+                            <option value="長崎県">長崎県</option>
+                            <option value="熊本県">熊本県</option>
+                            <option value="大分県">大分県</option>
+                            <option value="宮崎県">宮崎県</option>
+                            <option value="鹿児島県">鹿児島県</option>
+                            <option value="沖縄県">沖縄県</option>
+                        </select>
+                        <input type="text">
+                        <p>例）横浜市西区みなとみらい2-2-1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（現）<br>建物状況</p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none">
+                            <option value="none" selected="selected">----</option>
+                            <option value="アパート">アパート</option>
+                            <option value="マンション">マンション</option>
+                            <option value="団地">団地</option>
+                            <option value="社宅/寮">社宅/寮</option>
+                            <option value="一戸建て">一戸建て</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（現）<br>条件</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="condition_1" value="エレベータ有">
+                            <label for="condition_1">エレベータ有</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="condition_2" value="エレベータまで20m以上">
+                            <label for="condition_2">エレベータまで20m以上</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="condition_3" value="窓からの搬入有">
+                            <label for="condition_3">窓からの搬入有</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="condition_4" value="トラック入れない">
+                            <label for="condition_4">トラック入れない</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（新）<br>住所</p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none">
+                            <option value="none" selected="selected">選択してください</option>
+                            <option value="北海道">北海道</option>
+                            <option value="青森県">青森県</option>
+                            <option value="岩手県">岩手県</option>
+                            <option value="宮城県">宮城県</option>
+                            <option value="秋田県">秋田県</option>
+                            <option value="山形県">山形県</option>
+                            <option value="福島県">福島県</option>
+                            <option value="茨城県">茨城県</option>
+                            <option value="栃木県">栃木県</option>
+                            <option value="群馬県">群馬県</option>
+                            <option value="埼玉県">埼玉県</option>
+                            <option value="千葉県">千葉県</option>
+                            <option value="東京都">東京都</option>
+                            <option value="神奈川県">神奈川県</option>
+                            <option value="新潟県">新潟県</option>
+                            <option value="富山県">富山県</option>
+                            <option value="石川県">石川県</option>
+                            <option value="福井県">福井県</option>
+                            <option value="山梨県">山梨県</option>
+                            <option value="長野県">長野県</option>
+                            <option value="岐阜県">岐阜県</option>
+                            <option value="静岡県">静岡県</option>
+                            <option value="愛知県">愛知県</option>
+                            <option value="三重県">三重県</option>
+                            <option value="滋賀県">滋賀県</option>
+                            <option value="京都府">京都府</option>
+                            <option value="大阪府">大阪府</option>
+                            <option value="兵庫県">兵庫県</option>
+                            <option value="奈良県">奈良県</option>
+                            <option value="和歌山県">和歌山県</option>
+                            <option value="鳥取県">鳥取県</option>
+                            <option value="島根県">島根県</option>
+                            <option value="岡山県">岡山県</option>
+                            <option value="広島県">広島県</option>
+                            <option value="山口県">山口県</option>
+                            <option value="徳島県">徳島県</option>
+                            <option value="香川県">香川県</option>
+                            <option value="愛媛県">愛媛県</option>
+                            <option value="高知県">高知県</option>
+                            <option value="福岡県">福岡県</option>
+                            <option value="佐賀県">佐賀県</option>
+                            <option value="長崎県">長崎県</option>
+                            <option value="熊本県">熊本県</option>
+                            <option value="大分県">大分県</option>
+                            <option value="宮崎県">宮崎県</option>
+                            <option value="鹿児島県">鹿児島県</option>
+                            <option value="沖縄県">沖縄県</option>
+                        </select>
+                        <input type="text">
+                        <p>例）東京都新宿区西新宿2-8-1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（新）<br>建物状況</p>
+                    </div>
+                    <div class="right-name">
+                        <select data-role="none">
+                            <option value="none" selected="selected">----</option>
+                            <option value="アパート">アパート</option>
+                            <option value="マンション">マンション</option>
+                            <option value="団地">団地</option>
+                            <option value="社宅/寮">社宅/寮</option>
+                            <option value="一戸建て">一戸建て</option>
+                        </select>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>（新）<br>条件</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="new_condition_1" value="エレベータ有">
+                            <label for="new_condition_1">エレベータ有</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="new_condition_2" value="エレベータまで20m以上">
+                            <label for="new_condition_2">エレベータまで20m以上</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="new_condition_3" value="窓からの搬入有">
+                            <label for="new_condition_3">窓からの搬入有</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="new_condition_4" value="トラック入れない">
+                            <label for="new_condition_4">トラック入れない</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>家電</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_1" value="冷蔵庫（2ドア）">
+                            <label for="device_1">冷蔵庫（2ドア）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_2" value="冷蔵庫（中型）">
+                            <label for="device_2">冷蔵庫（中型）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_3" value="洗濯機（一般全自動）">
+                            <label for="device_3">洗濯機（一般全自動）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_4" value="洗濯機（ドラム式）">
+                            <label for="device_4">洗濯機（ドラム式）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_5" value="電子レンジ">
+                            <label for="device_5">電子レンジ</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_6" value="掃除機">
+                            <label for="device_6">掃除機</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_7" value="扇風機">
+                            <label for="device_7">扇風機</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_8" value="コタツ">
+                            <label for="device_8">コタツ</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_9" value="ストーブ">
+                            <label for="device_9">ストーブ</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="device_10" value="空気清浄器">
+                            <label for="device_10">空気清浄器</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>AV</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="av_1" value="テレビ（小）">
+                            <label for="av_1">テレビ（小）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="av_2" value="テレビ（26ｲﾝﾁ以上）">
+                            <label for="av_2">テレビ（26ｲﾝﾁ以上）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="av_3" value="テレビ台">
+                            <label for="av_3">テレビ台</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="av_4" value="ビデオ/DVD">
+                            <label for="av_4">ビデオ/DVD</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="av_5" value="ステレオ">
+                            <label for="av_5">ステレオ</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>パソコン</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="pc_1" value="パソコン（ノート）">
+                            <label for="pc_1">パソコン（ノート）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="pc_2" value="パソコン（デスクトップ）">
+                            <label for="pc_2">パソコン（デスクトップ）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="pc_3" value="パソコンラック">
+                            <label for="pc_3">パソコンラック</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="pc_4" value="プリンター">
+                            <label for="pc_4">プリンター</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>家具</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_1" value="タンス（大）">
+                            <label for="furniture_1">タンス（大）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_2" value="タンス（小）">
+                            <label for="furniture_2">タンス（小）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_3" value="チェスト">
+                            <label for="furniture_3">チェスト</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_4" value="食器棚">
+                            <label for="furniture_4">食器棚</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_5" value="本棚">
+                            <label for="furniture_5">本棚</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_6" value="鏡台">
+                            <label for="furniture_6">鏡台</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_7" value="机">
+                            <label for="furniture_7">机</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_8" value="テーブル">
+                            <label for="furniture_8">テーブル</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_9" value="椅子">
+                            <label for="furniture_9">椅子</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_10" value="カラーBOX">
+                            <label for="furniture_10">カラーBOX</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_11" value="姿見">
+                            <label for="furniture_11">姿見</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_12" value="スチールラック">
+                            <label for="furniture_12">スチールラック</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="furniture_13" value="シェルフ">
+                            <label for="furniture_13">シェルフ</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>寝具</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="bed_1" value="ベッド（ｼﾝｸﾞﾙ）">
+                            <label for="bed_1">ベッド（ｼﾝｸﾞﾙ）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bed_2" value="ベッド（ｾﾐﾀﾞﾌﾞﾙ）">
+                            <label for="bed_2">ベッド（ｾﾐﾀﾞﾌﾞﾙ）</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bed_3" value="足付マットレス">
+                            <label for="bed_3">足付マットレス</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bed_4" value="ソファー">
+                            <label for="bed_4">ソファー</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="bed_5" value="布団">
+                            <label for="bed_5">布団</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>その他</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="etc_1" value="ゴルフバック">
+                            <label for="etc_1">ゴルフバック</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="etc_2" value="スキー/スノーボード">
+                            <label for="etc_2">スキー/スノーボード</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="etc_3" value="自転車">
+                            <label for="etc_3">自転車</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="etc_4" value="バイク（原付）">
+                            <label for="etc_4">バイク（原付）</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>衣装ケース 1段</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="dress">
+                            <select data-role="none">
+                                <option value="none" selected="selected">----</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="10～15">10～15</option>
+                                <option value="15～20">15～20</option>
+                                <option value="20以上">20以上</option>
+                            </select>
+                            <p>個</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>衣装ケース 3段-5段</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="dress">
+                            <select data-role="none">
+                                <option value="none" selected="selected">----</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="10～15">10～15</option>
+                                <option value="15～20">15～20</option>
+                                <option value="20以上">20以上</option>
+                            </select>
+                            <p>個</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>ダンボール数（予想）</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="dress">
+                            <select data-role="none">
+                                <option value="none" selected="selected">----</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="10～15">10～15</option>
+                                <option value="15～20">15～20</option>
+                                <option value="20以上">20以上</option>
+                            </select>
+                            <p>個</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>荷物の補足内容</p>
+                    </div>
+                    <div class="right-name">
+                        <textarea placeholder="上記リスト以外、複数ある物やサイズなど詳細を下さいm(__)m"></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>引越し日 （第一希望）</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <p>例）H19年10月30日</p>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time1_1" value="8時～">
+                            <label for="time1_1">8時～</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time1_2" value="11時～12時">
+                            <label for="time1_2">11時～12時</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time1_3" value="14時～15時">
+                            <label for="time1_3">14時～15時</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time1_4" value="17時～">
+                            <label for="time1_4">17時～</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>引越し日 （第二希望）</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <div class="checkbox">
+                            <input type="checkbox" id="time2_1" value="8時～">
+                            <label for="time2_1">8時～</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time2_2" value="11時～12時">
+                            <label for="time2_2">11時～12時</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time2_3" value="14時～15時">
+                            <label for="time2_3">14時～15時</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="time2_4" value="17時～">
+                            <label for="time2_4">17時～</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>当店は何でお知りになりましたか？</p>
+                    </div>
+                    <div class="right-name">
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_1" value="Yahoo!">
+                            <label for="question_1">Yahoo!</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_2" value="Google">
+                            <label for="question_2">Google</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_3" value="msn">
+                            <label for="question_3">msn</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_4" value="情報誌">
+                            <label for="question_4">情報誌</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_5" value="紹介">
+                            <label for="question_5">紹介</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="question_6" value="前回利用">
+                            <label for="question_6">前回利用</label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>検索キーワード</p>
+                    </div>
+                    <div class="right-name">
+                        <input type="text">
+                        <p>例）単身　引越し</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="left-title">
+                        <p>その他ご要望など</p>
+                    </div>
+                    <div class="right-name">
+                        <textarea></textarea>
+                    </div>
+                </li>
+                <li>
+                    <div class="button-contents">
+                        <input type="submit">
+                        <input onclick="reset()" type="reset">
+                    </div>
+                </li>
+            </ul>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>福岡,東京,大阪,北海道の引越しが格安</p>
+    </footer>
+
+    <script type="text/javascript">
+        function reset() {
+            document.quotetion.reset();
+        }
+    </script>
+
+</body>
+
 </html>
