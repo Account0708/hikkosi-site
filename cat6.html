@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>お問合せ</title>
-        <link rel="stylesheet" href="./style.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    </head>
-    <body>
-        
-        <header>
-            <div class="site-header">
-    
-                <div class="site-header-top">
-                    <img class="logo" src="./img/rogo.png" alt="">
-                    <!-- <div class="site-header-text">
+
+<head>
+    <meta charset="utf-8">
+    <title>お問合せ</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="site-header">
+
+            <div class="site-header-top">
+                <img class="logo" src="./img/rogo.png" alt="">
+                <!-- <div class="site-header-text">
                                 <p>プロフェッショナルなサービスをロープライスで</p>
                                 <h2>引越しのプロロ</h2>
                             </div> -->
-                </div>
-                <img class="title-bg" src="./img/title-bg.png" alt="">
-                <div class="freedial">
-                    <img src="./img/freedaiyaru.jpg" alt="">
-                </div>
             </div>
-        </header>
-    
-        <div class="banner">
-            <p>お問合せ</p>
+            <img class="title-bg" src="./img/title-bg.png" alt="">
+            <div class="freedial">
+                <img src="./img/freedaiyaru.jpg" alt="">
+            </div>
         </div>
+    </header>
 
-        <div class="contact">
+    <div class="banner">
+        <p>お問合せ</p>
+    </div>
 
-        </div>
+    <div class="contact">
 
-        <div class="main-company-profile">
+    </div>
+
+    <div class="main-company-profile">
+        <form name="contact">
+
             <ul class="contact-table">
                 <li>
                     <div class="left-title">
@@ -77,22 +81,29 @@
                         <p>ご意見・ご要望</p>
                     </div>
                     <div class="right-name">
-                       <textarea></textarea>
+                        <textarea></textarea>
                     </div>
                 </li>
                 <li>
                     <div class="button-contents">
                         <input type="submit">
-                        <input type="reset">
+                        <input onclick="reset()" type="reset">
                     </div>
                 </li>
-                
             </ul>
-        </div>
 
-        <footer>
-            <p>福岡,東京,大阪,北海道の引越しが格安</p>
-        </footer>
-    
-    </body>
+        </form>
+    </div>
+
+    <footer>
+        <p>福岡,東京,大阪,北海道の引越しが格安</p>
+    </footer>
+
+    <script type="text/javascript">
+        function reset() {
+            document.contact.reset();
+        }
+    </script>
+</body>
+
 </html>
