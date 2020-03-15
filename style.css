@@ -509,8 +509,32 @@ footer p {
 
 .cashless {
     width: 100%;
-    background: #c2eeff;
+    background: white;
 }
 .cashless img {
     width: 100%;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+}
+.cards img {
+    width: 20%;
+    background: white;
+    margin: 0 1%;
+}
+.cards .paypay {
+    width: 30%;
+}
+.cashless p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: large;
+    margin-top: 5px;
 }
