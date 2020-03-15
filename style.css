@@ -506,3 +506,11 @@ footer p {
 .quotetion-table .dress select {
     width: auto;
 }
+
+.cashless {
+    width: 100%;
+    background: #c2eeff;
+}
+.cashless img {
+    width: 100%;
+}
