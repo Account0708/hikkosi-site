@@ -403,9 +403,6 @@ footer p {
     justify-content: space-between;
     border-bottom: 1px solid #111111;
 }
-/* .quotetion-table li:nth-child(5) {
-    min-height: 120px;
-} */
 .quotetion-table .left-title {
     display: flex;
     align-items: center;
@@ -537,4 +534,12 @@ footer p {
     font-weight: 700;
     font-size: large;
     margin-top: 5px;
+}
+.contact-message {
+    text-align: center;
+    margin: 10px 0;
+}
+.quotation-message {
+    text-align: center;
+    margin: 10px 0;
 }
