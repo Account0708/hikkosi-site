@@ -51,6 +51,9 @@
     line-height: 1.4;
     background: white;
 }
+.freedial a {
+    text-decoration: underline;
+}
 .kanto {
     margin-left: 10px;
 }
